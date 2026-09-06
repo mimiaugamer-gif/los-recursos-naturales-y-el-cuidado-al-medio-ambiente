@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recursos Naturales y Cuidado del Medio Ambiente</title>
+<style>
+:root{
+  --bg:#f4f8f4; --card:#ffffff; --text:#17321f; --muted:#5d6f62;
+  --primary:#197a45; --secondary:#8bc34a; --accent:#e8f5e9;
+  --shadow:0 10px 30px rgba(22,70,40,.12);
+}
+*{box-sizing:border-box;scroll-behavior:smooth}
+body{margin:0;font-family:Arial,Helvetica,sans-serif;background:var(--bg);color:var(--text);line-height:1.65}
+header{
+  min-height:82vh;display:flex;align-items:center;justify-content:center;text-align:center;
+  padding:50px 20px;position:relative;overflow:hidden;
+  background:linear-gradient(135deg,#0b5d35,#2e9d59 55%,#8bc34a);
+  color:white;
+}
+header:before,header:after{content:"";position:absolute;border-radius:50%;background:rgba(255,255,255,.09)}
+header:before{width:420px;height:420px;top:-180px;left:-120px}
+header:after{width:500px;height:500px;bottom:-250px;right:-180px}
+.hero{max-width:950px;position:relative;z-index:2}
+.badge{display:inline-block;background:rgba(255,255,255,.18);padding:8px 16px;border-radius:30px;margin-bottom:15px;font-weight:bold}
+h1{font-size:clamp(2.3rem,6vw,4.8rem);line-height:1.05;margin:10px 0 20px}
+.hero p{font-size:1.2rem;max-width:750px;margin:0 auto 28px}
+.btn{display:inline-block;padding:13px 22px;border-radius:30px;text-decoration:none;font-weight:bold;margin:5px;border:2px solid white;color:white;transition:.25s}
+.btn:hover{transform:translateY(-3px);background:white;color:#197a45}
+nav{position:sticky;top:0;z-index:20;background:rgba(255,255,255,.96);box-shadow:0 3px 14px rgba(0,0,0,.08);padding:10px;display:flex;gap:8px;justify-content:center;flex-wrap:wrap}
+nav a{color:var(--primary);text-decoration:none;font-weight:bold;padding:8px 12px;border-radius:20px}
+nav a:hover{background:var(--accent)}
+main{max-width:1100px;margin:auto;padding:50px 20px}
+section{margin-bottom:65px}
+.section-title{text-align:center;margin-bottom:30px}
+.section-title h2{font-size:2.2rem;margin-bottom:8px}
+.section-title p{color:var(--muted)}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:20px}
+.card{background:var(--card);border-radius:20px;padding:24px;box-shadow:var(--shadow);transition:.25s}
+.card:hover{transform:translateY(-6px)}
+.icon{font-size:3rem}
+.card h3{margin:10px 0;color:var(--primary)}
+.highlight{background:var(--accent);border-left:6px solid var(--primary);padding:20px;border-radius:12px;margin:20px 0}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:15px}
+.stat{background:#fff;padding:22px;text-align:center;border-radius:18px;box-shadow:var(--shadow)}
+.stat strong{display:block;font-size:2rem;color:var(--primary)}
+.accordion{background:white;border-radius:14px;margin:10px 0;box-shadow:0 4px 15px rgba(0,0,0,.07);overflow:hidden}
+.accordion button{width:100%;padding:18px;text-align:left;border:0;background:white;font-size:1rem;font-weight:bold;color:var(--text);cursor:pointer}
+.accordion .content{display:none;padding:0 18px 18px;color:var(--muted)}
+.accordion.open .content{display:block}
+.actions{display:flex;gap:10px;flex-wrap:wrap;margin-top:15px}
+.action{flex:1;min-width:210px;background:white;border:2px solid #dcefe1;border-radius:15px;padding:16px}
+.action span{font-size:1.6rem}
+.team{background:linear-gradient(135deg,#e8f5e9,#f8fff9);padding:30px;border-radius:22px;box-shadow:var(--shadow)}
+.team ul{columns:2;column-gap:40px;padding-left:25px}
+@media(max-width:650px){.team ul{columns:1}}
+.quiz{background:#fff;padding:28px;border-radius:22px;box-shadow:var(--shadow)}
+.question{margin:20px 0;padding:18px;background:#f7fbf7;border-radius:14px}
+.question label{display:block;margin:8px 0;cursor:pointer}
+#result{font-weight:bold;font-size:1.15rem;margin-top:18px}
+.refs li{margin-bottom:12px}
+footer{background:#123d25;color:white;text-align:center;padding:35px 20px}
+.top{position:fixed;right:20px;bottom:20px;width:45px;height:45px;border-radius:50%;border:0;background:var(--primary);color:white;font-size:20px;cursor:pointer;box-shadow:var(--shadow)}
+</style>
+</head>
+<body>
+
+<header id="inicio">
+  <div class="hero">
+    <div class="badge">🌎 Blog educativo • Medio ambiente</div>
+    <h1>Recursos Naturales y Cuidado del Medio Ambiente</h1>
+    <p>Conocer, valorar y proteger la naturaleza es una responsabilidad de todos. Explora este blog y descubre cómo nuestras acciones pueden ayudar al planeta.</p>
+    <a class="btn" href="#recursos">Explorar el blog</a>
+    <a class="btn" href="#quiz">🎯 Pon a prueba tus conocimientos</a>
+  </div>
+</header>
+
+<nav>
+  <a href="#inicio">Inicio</a>
+  <a href="#recursos">Recursos</a>
+  <a href="#importancia">Importancia</a>
+  <a href="#problemas">Problemas</a>
+  <a href="#acciones">Acciones</a>
+  <a href="#ecuador">Ecuador</a>
+  <a href="#quiz">Quiz</a>
+  <a href="#referencias">Referencias</a>
+</nav>
+
+<main>
+
+<section id="recursos">
+  <div class="section-title">
+    <h2>🌱 ¿Qué son los recursos naturales?</h2>
+    <p>Elementos de la naturaleza que utilizamos para satisfacer nuestras necesidades.</p>
+  </div>
+  <div class="grid">
+    <article class="card"><div class="icon">💧</div><h3>Agua</h3><p>Es indispensable para la vida, la agricultura, la industria, el consumo humano y el funcionamiento de los ecosistemas. Debemos evitar su contaminación y desperdicio.</p></article>
+    <article class="card"><div class="icon">🌳</div><h3>Bosques</h3><p>Proporcionan alimentos, materias primas y hábitats para numerosas especies. También contribuyen a conservar los suelos y regular el clima.</p></article>
+    <article class="card"><div class="icon">🌱</div><h3>Suelo</h3><p>Permite producir alimentos y sostiene numerosos ecosistemas. La erosión, contaminación y deforestación pueden disminuir su calidad.</p></article>
+    <article class="card"><div class="icon">🦋</div><h3>Biodiversidad</h3><p>Comprende la variedad de seres vivos y ecosistemas. Es fundamental para la estabilidad de la naturaleza y proporciona servicios ecosistémicos.</p></article>
+    <article class="card"><div class="icon">☀️</div><h3>Recursos renovables</h3><p>Son aquellos que pueden regenerarse naturalmente si se utilizan de forma responsable, como el agua, los bosques y la energía solar.</p></article>
+    <article class="card"><div class="icon">⛏️</div><h3>Recursos no renovables</h3><p>Existen en cantidades limitadas y necesitan períodos muy largos para formarse. Ejemplos: petróleo, carbón, gas natural y minerales.</p></article>
+  </div>
+</section>
+
+<section id="importancia">
+  <div class="section-title">
+    <h2>🌍 ¿Por qué debemos cuidar la naturaleza?</h2>
+    <p>El ambiente sano es fundamental para la vida y el desarrollo de las sociedades.</p>
+  </div>
+  <div class="highlight">
+    Los ecosistemas proporcionan agua, alimentos, materias primas y otros beneficios esenciales. La conservación de la biodiversidad también ayuda a mantener servicios ecosistémicos como la polinización y el control natural de plagas.
+  </div>
+  <div class="stats">
+    <div class="stat"><strong>31%</strong><span>aproximadamente de la superficie terrestre está cubierta por bosques.</span></div>
+    <div class="stat"><strong>🌿</strong><span>Los ecosistemas saludables ayudan a sostener la vida.</span></div>
+    <div class="stat"><strong>♻️</strong><span>Reducir y reutilizar disminuye la presión sobre los recursos.</span></div>
+  </div>
+</section>
+
+<section id="problemas">
+  <div class="section-title">
+    <h2>⚠️ Principales problemas ambientales</h2>
+    <p>Haz clic en cada tema para conocer más.</p>
+  </div>
+
+  <div class="accordion"><button>🌲 Deforestación <span>＋</span></button><div class="content">Es la pérdida de bosques debido a actividades humanas. Puede provocar pérdida de biodiversidad, degradación del suelo y alteraciones en los ecosistemas.</div></div>
+  <div class="accordion"><button>💧 Contaminación del agua <span>＋</span></button><div class="content">Los residuos, sustancias químicas y aguas contaminadas pueden deteriorar ríos, lagos y océanos y afectar a las personas y a otros seres vivos.</div></div>
+  <div class="accordion"><button>🌫️ Contaminación del aire <span>＋</span></button><div class="content">Las emisiones procedentes del transporte, la industria y otras actividades pueden deteriorar la calidad del aire y afectar al ambiente.</div></div>
+  <div class="accordion"><button>🗑️ Exceso de residuos <span>＋</span></button><div class="content">La generación excesiva de basura y su manejo inadecuado pueden contaminar el suelo y el agua. La separación y el reciclaje ayudan a disminuir este problema.</div></div>
+  <div class="accordion"><button>🌡️ Cambio climático <span>＋</span></button><div class="content">El aumento de gases de efecto invernadero está relacionado con cambios importantes en el sistema climático y puede afectar ecosistemas y comunidades.</div></div>
+  <div class="accordion"><button>🐾 Pérdida de biodiversidad <span>＋</span></button><div class="content">La transformación de ecosistemas, la sobreexplotación, la contaminación y el cambio climático pueden contribuir a la disminución de especies y diversidad biológica.</div></div>
+</section>
+
+<section id="acciones">
+  <div class="section-title">
+    <h2>♻️ ¿Qué podemos hacer?</h2>
+    <p>Pequeñas acciones cotidianas pueden generar cambios positivos.</p>
+  </div>
+  <div class="actions">
+    <div class="action">💧 <b>Ahorra agua</b><br>Cierra los grifos y repara fugas.</div>
+    <div class="action">💡 <b>Ahorra energía</b><br>Apaga luces y equipos que no uses.</div>
+    <div class="action">♻️ <b>Separa residuos</b><br>Clasifica los materiales aprovechables.</div>
+    <div class="action">🛍️ <b>Reduce plásticos</b><br>Prefiere productos reutilizables.</div>
+    <div class="action">🌳 <b>Cuida los árboles</b><br>Protege y planta especies adecuadas.</div>
+    <div class="action">🚲 <b>Muévete de forma sostenible</b><br>Camina, usa bicicleta o transporte público cuando sea posible.</div>
+  </div>
+</section>
+
+<section id="ecuador">
+  <div class="section-title">
+    <h2>🇪🇨 Recursos naturales del Ecuador</h2>
+    <p>Un país con una enorme diversidad de ecosistemas.</p>
+  </div>
+  <div class="card">
+    <p>Ecuador posee una gran diversidad natural debido a sus diferentes regiones geográficas. Entre sus ecosistemas se encuentran bosques, páramos, ríos, manglares y ambientes marinos, que albergan una importante variedad de especies.</p>
+    <p>Esta riqueza natural representa una oportunidad ambiental, social y económica, pero también implica una responsabilidad: utilizar los recursos de manera sostenible, proteger los ecosistemas y promover la educación ambiental.</p>
+    <div class="highlight"><b>💚 Nuestro compromiso:</b> cuidar la naturaleza del Ecuador significa proteger recursos que son importantes para las generaciones actuales y futuras.</div>
+  </div>
+</section>
+
+<section id="quiz">
+  <div class="section-title">
+    <h2>🎯 Quiz ambiental</h2>
+    <p>Responde las preguntas y descubre cuánto aprendiste.</p>
+  </div>
+  <div class="quiz">
+    <div class="question">
+      <b>1. ¿Cuál es un recurso natural no renovable?</b>
+      <label><input type="radio" name="q1" value="0"> Agua</label>
+      <label><input type="radio" name="q1" value="0"> Bosques</label>
+      <label><input type="radio" name="q1" value="1"> Petróleo</label>
+    </div>
+    <div class="question">
+      <b>2. ¿Qué acción ayuda a ahorrar agua?</b>
+      <label><input type="radio" name="q2" value="1"> Cerrar el grifo cuando no se utiliza</label>
+      <label><input type="radio" name="q2" value="0"> Dejar correr el agua</label>
+      <label><input type="radio" name="q2" value="0"> Arrojar residuos a los ríos</label>
+    </div>
+    <div class="question">
+      <b>3. ¿Qué es la biodiversidad?</b>
+      <label><input type="radio" name="q3" value="1"> La variedad de seres vivos y ecosistemas</label>
+      <label><input type="radio" name="q3" value="0"> Solo los animales domésticos</label>
+      <label><input type="radio" name="q3" value="0"> Únicamente los bosques</label>
+    </div>
+    <div class="question">
+      <b>4. ¿Cuál contribuye al cuidado ambiental?</b>
+      <label><input type="radio" name="q4" value="0"> Aumentar los residuos</label>
+      <label><input type="radio" name="q4" value="1"> Reducir, reutilizar y reciclar</label>
+      <label><input type="radio" name="q4" value="0"> Desperdiciar recursos</label>
+    </div>
+    <button class="btn" style="background:#197a45;border-color:#197a45;cursor:pointer" onclick="calificar()">Ver resultado</button>
+    <div id="result"></div>
+  </div>
+</section>
+
+<section id="equipo">
+  <div class="section-title">
+    <h2>👥 Integrantes</h2>
+    <p>Trabajo realizado por:</p>
+  </div>
+  <div class="team">
+    <ul>
+      <li>DILAN STEVEN CHALACAN JACOME</li>
+      <li>ERICK ALEXANDER CHICAIZA TORRES</li>
+      <li>CARLOS ESTEBAN GARZON CHUCA</li>
+      <li>AXEL JORDAN LOPEZ VALAREZO</li>
+      <li>JOHAN ALEJANDRO GONZALEZ CAICEDO</li>
+      <li>MORALES TIPAN DEIVIO PATRICIO</li>
+    </ul>
+  </div>
+</section>
+
+<section id="referencias">
+  <div class="section-title">
+    <h2>📚 Referencias bibliográficas</h2>
+    <p>Fuentes institucionales utilizadas para elaborar el contenido.</p>
+  </div>
+  <div class="card refs">
+    <ul>
+      <li>Organización de las Naciones Unidas para la Alimentación y la Agricultura. (s. f.). <i>Biodiversidad</i>. FAO.</li>
+      <li>Organización de las Naciones Unidas para la Alimentación y la Agricultura. (s. f.). <i>Mejor medio ambiente</i>. FAO.</li>
+      <li>Organización de las Naciones Unidas para la Alimentación y la Agricultura. (s. f.). <i>Gestión forestal sostenible para la conservación de la biodiversidad</i>. FAO.</li>
+      <li>Naciones Unidas. (s. f.). <i>Biodiversidad: nuestra defensa natural más fuerte contra el cambio climático</i>.</li>
+      <li>Ministerio del Ambiente y Energía. (s. f.). <i>Sistema Nacional de Indicadores Ambientales y Sostenibilidad (SINIAS)</i>. Gobierno del Ecuador.</li>
+      <li>Ministerio del Ambiente y Energía. (s. f.). <i>Caja de herramientas de educación ambiental</i>. Gobierno del Ecuador.</li>
+    </ul>
+    <div class="highlight">Las referencias pueden consultarse desde los sitios oficiales de FAO, Naciones Unidas y el Gobierno del Ecuador.</div>
+  </div>
+</section>
+
+</main>
+
+<footer>
+  <h2>🌎 Cuidar el planeta es tarea de todos</h2>
+  <p>Blog educativo sobre recursos naturales y cuidado del medio ambiente</p>
+  <p>© 2026 • Trabajo académico</p>
+</footer>
+
+<button class="top" onclick="window.scrollTo({top:0,behavior:'smooth'})" title="Volver arriba">↑</button>
+
+<script>
+document.querySelectorAll('.accordion button').forEach(btn=>{
+  btn.addEventListener('click',()=>{
+    const box=btn.parentElement;
+    box.classList.toggle('open');
+    btn.querySelector('span').textContent=box.classList.contains('open')?'−':'＋';
+  });
+});
+function calificar(){
+  let score=0;
+  for(let i=1;i<=4;i++){
+    const ans=document.querySelector('input[name="q'+i+'"]:checked');
+    if(ans) score+=Number(ans.value);
+  }
+  const result=document.getElementById('result');
+  if(score===4) result.textContent='🌟 ¡Excelente! Respondiste correctamente las 4 preguntas.';
+  else if(score>=2) result.textContent='👍 ¡Muy bien! Obtuviste '+score+' de 4. Puedes volver a revisar el contenido.';
+  else result.textContent='🌱 Obtuviste '+score+' de 4. ¡Sigue aprendiendo y cuidando el planeta!';
+}
+</script>
+</body>
+</html>
